@@ -1,0 +1,36 @@
+.shutter>img {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    height: 95%;
+    width: 35%;
+}
+
+#shutter {
+    color:gray;
+}
+
+.ribbon {
+    background-color: rgba(128, 128, 128, 0.45);
+    position: fixed;
+    top: 35%;
+    left: 0;
+    height: 10%;
+    width: 30%;
+}
+
+#thunderlogo {
+    position: relative;
+    opacity: 65%;
+    width: 100%;
+    height: 100%;
+}
+
+#thundertext {
+    position: absolute;
+    color: rgb(20, 18, 18);
+    opacity: 65%;
+    top: 15%;
+    left: 20%;
+    font-size: 290%;
+}
