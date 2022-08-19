@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url("images/blue-landscape.jpg");
+    box-shadow: 0 0 8px 8px rgb(11,11,11) inset;
     height: 100vh;
     width: 40%;
 }
@@ -29,6 +30,7 @@ body {
     height: 15vh;
     width: 100%;
     opacity: 0.45;
+    box-shadow: -10px 0 8px 8px rgb(11,11,11) inset;
 }
 
 #thunderlogo {
@@ -45,9 +47,65 @@ body {
 }
 
 .right-side {
-    background-image: linear-gradient(to bottom right,  rgb(11,11,11) ,rgb(59,59,59));
-    color: wheat;
+    background-image: linear-gradient(to right,  rgb(11,11,11) ,rgb(59,59,59));
+    color: gray;
     right: 0%;
     height: 100vh;
-    width: 60%;
+    width: 60%;    
+    padding-left: 50px;
+}
+
+.right-side>h1 {
+    padding-top: 100px;
+}
+
+.right-side>h2 {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.right-side>h3 {
+    font-size: 1.5em;
+}
+
+.signup-form>input {
+    padding-top: 10px;
+    padding-right: 40px;
+    margin: 10px;
+    border-radius: 2%;
+    font-size: 1.25em;
+    border: 2px rgba(245, 245, 245, 0.5) solid;
+}
+
+.signup-form>input::placeholder {
+    opacity: 1;
+    text-align: left;
+    vertical-align: text-bottom;
+}
+
+.signup-form>input:focus {
+    box-shadow: 0px 0px 3px 3px white;
+    outline: none;
+}
+
+.signup-form>input:valid:not(:focus) {
+    border: 2px green solid;
+}
+
+.signup-form>input:invalid:not(:placeholder-shown):not(:focus) {
+    border: 2px red solid;
+}
+
+#submit {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-radius: 1%;
+    font-size: 1.5em;
+
+    box-shadow: 0 0px 1px 1px white;
 }
